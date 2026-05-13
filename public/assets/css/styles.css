@@ -97,9 +97,9 @@ body.has-pointer .cursor-glow { opacity: 1; }
 .eyebrow { margin: 0 0 18px; color: var(--green-soft); font-size: .78rem; text-transform: uppercase; letter-spacing: .22em; font-weight: 900; }
 .eyebrow.dark { color: var(--green); }
 h1, h2, h3, p { margin-top: 0; }
-h1 { margin-bottom: 24px; font-size: clamp(4.1rem, 9vw, 9.8rem); line-height: .84; letter-spacing: -.085em; max-width: 920px; }
+h1 { margin-bottom: 24px; font-size: clamp(3.1rem, 7vw, 6.2rem); line-height: 1; letter-spacing: -.06em; max-width: 920px; }
 h1 span { display: block; color: rgba(255,255,255,.62); }
-h2 { font-size: clamp(2.3rem, 5vw, 5.4rem); line-height: .92; letter-spacing: -.06em; margin-bottom: 18px; }
+h2 { font-size: clamp(2rem, 4.2vw, 4rem); line-height: 1; letter-spacing: -.05em; margin-bottom: 18px; }
 h3 { font-size: 1.35rem; line-height: 1.1; margin-bottom: 12px; letter-spacing: -.03em; }
 .hero-text, .section-heading p, .contact-copy p, .page-hero p { color: rgba(255,255,255,.68); font-size: clamp(1.05rem, 1.8vw, 1.25rem); max-width: 720px; }
 .section-light .section-heading p, .section-light p, .two-column-content p { color: rgba(0,0,0,.62); }
