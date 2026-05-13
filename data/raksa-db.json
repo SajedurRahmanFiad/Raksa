@@ -1,0 +1,53 @@
+{
+  "inquiries": [],
+  "projects": [
+    {
+      "id": "3578dc88-dd3d-4d9e-803c-5e4afd0d8677",
+      "title": "High-rise finishing support",
+      "location": "Gulf Region",
+      "category": "Construction",
+      "year": "2026",
+      "featured": true,
+      "status": "active",
+      "image": "/assets/img/project-placeholder-1.svg",
+      "description": "Finishing, manpower coordination, and site execution support for premium building works.",
+      "tags": [
+        "finishing",
+        "manpower",
+        "quality"
+      ]
+    },
+    {
+      "id": "8be13983-3d27-4790-b2b9-127fd4465b81",
+      "title": "MEP and trade workforce mobilization",
+      "location": "Saudi Arabia",
+      "category": "Manpower Supply",
+      "year": "2026",
+      "featured": true,
+      "status": "active",
+      "image": "/assets/img/project-placeholder-2.svg",
+      "description": "Skilled technical personnel for electrical, mechanical, civil, and support requirements.",
+      "tags": [
+        "mep",
+        "technical",
+        "mobilization"
+      ]
+    },
+    {
+      "id": "d3f12223-f53e-4d3e-9d44-eae9d9c8ec23",
+      "title": "Contracting support package",
+      "location": "Riyadh, Saudi Arabia",
+      "category": "Contracting",
+      "year": "2026",
+      "featured": true,
+      "status": "active",
+      "image": "/assets/img/project-placeholder-3.svg",
+      "description": "A controlled delivery model combining site supervision, manpower planning, and trade execution.",
+      "tags": [
+        "contracting",
+        "supervision",
+        "delivery"
+      ]
+    }
+  ]
+}

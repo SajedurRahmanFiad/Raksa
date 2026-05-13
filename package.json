@@ -1,0 +1,15 @@
+{
+  "name": "raksa-complete-website",
+  "version": "1.0.0",
+  "description": "Ready-to-use full-stack website for RAKSA construction, contracting and manpower supply.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "UNLICENSED"
+}

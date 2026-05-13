@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Manpower project placeholder">
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#030303"/><stop offset=".62" stop-color="#101713"/><stop offset="1" stop-color="#00843d"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="960" cy="160" r="280" fill="#00843d" opacity=".32"/>
+  <circle cx="160" cy="650" r="300" fill="#e52329" opacity=".24"/>
+  <g fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="3"><path d="M80 610h1040M120 520h960M180 430h840M250 340h700"/><path d="M250 680 600 130l350 550"/></g>
+  <g fill="#fff" opacity=".86"><circle cx="330" cy="350" r="38"/><rect x="295" y="395" width="70" height="150" rx="30"/><circle cx="500" cy="310" r="44"/><rect x="462" y="360" width="76" height="190" rx="32"/><circle cx="690" cy="330" r="40"/><rect x="655" y="376" width="70" height="170" rx="30"/><circle cx="850" cy="365" r="36"/><rect x="818" y="407" width="64" height="138" rx="28"/></g>
+  <text x="90" y="145" fill="#fff" font-family="Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="6">RAKSA</text>
+  <text x="90" y="193" fill="#fff" opacity=".62" font-family="Arial, sans-serif" font-size="24">Manpower mobilization</text>
+</svg>
