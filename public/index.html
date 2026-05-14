@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RAKSA | Construction, Contracting and Manpower Supply</title>
-    <meta name="description" content="RAKSA is a Riyadh-based construction, contracting and manpower supply partner delivering reliable workforce mobilization, site support and premium project execution." />
+    <meta name="description" content="RAKSA is a {{LOCATION}}-based construction, contracting and manpower supply partner delivering reliable workforce mobilization, site support and premium project execution." />
     <meta name="theme-color" content="#050505" />
-    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="icon" type="image/png" href="assets/img/Avatar.png" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body data-page="home">
@@ -21,7 +21,7 @@
     <header class="site-header" data-header>
       <div class="container nav-shell">
         <a class="brand" href="/" aria-label="RAKSA home">
-          <img src="assets/img/logo.svg" alt="" class="brand-logo" />
+          <img src="assets/img/MainLogo.png" alt="RAKSA logo" class="brand-logo" />
           <span>
             <strong>RAKSA</strong>
             <small>Construction | Contracting | Manpower</small>
@@ -33,12 +33,15 @@
           <em>Menu</em>
         </button>
         <nav class="site-nav" id="site-nav" data-nav>
-          <a href="/#services">Services</a>
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
           <a href="/profile">Profile</a>
+          <a href="/portfolio.html">Portfolio</a>
           <a href="/projects">Projects</a>
+          <a href="/#services">Services</a>
           <a href="/#process">Process</a>
           <a href="/#contact">Contact</a>
-          <a class="nav-cta" href="https://wa.me/966500318730" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="nav-cta" href="https://wa.me/{{PHONE}}" target="_blank" rel="noopener">WhatsApp</a>
         </nav>
       </div>
     </header>
@@ -50,7 +53,7 @@
         </div>
         <div class="container hero-grid">
           <div class="hero-copy" data-reveal>
-            <p class="eyebrow">Riyadh based. Gulf ready. Built for serious sites.</p>
+            <p class="eyebrow">{{LOCATION}} based. Gulf ready. Built for serious sites.</p>
             <h1>Build with certainty. <span>Mobilize with precision.</span></h1>
             <p class="hero-text">RAKSA delivers construction, contracting and manpower supply for clients who need safe execution, reliable workforce deployment and a premium partner they can trust.</p>
             <div class="hero-actions">
@@ -58,9 +61,9 @@
               <a class="btn btn-secondary" href="/profile">View company profile</a>
             </div>
             <div class="hero-contact-strip" aria-label="RAKSA contact details">
-              <a href="tel:+966500318730">+966 50 031 8730</a>
-              <a href="mailto:mahmod0102@gmail.com">mahmod0102@gmail.com</a>
-              <span>Riyadh, Saudi Arabia</span>
+              <a href="tel:{{PHONE}}">{{PHONE}}</a>
+              <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+              <span>{{LOCATION}}</span>
             </div>
           </div>
 
@@ -82,9 +85,6 @@
                 <article><span>06</span>Mobilization</article>
               </div>
             </div>
-            <div class="mini-card float-a tilt-card"><span>Base</span><strong>Riyadh</strong></div>
-            <div class="mini-card float-b tilt-card"><span>Focus</span><strong>Quality delivery</strong></div>
-            <div class="mini-card float-c tilt-card"><span>Standard</span><strong>Safety first</strong></div>
           </div>
         </div>
 
@@ -239,9 +239,9 @@
             <h2>Tell RAKSA what you need. The backend will save every inquiry.</h2>
             <p>Use the form for construction, contracting or manpower requests. The website stores inquiries in the backend admin panel and can optionally forward them to a webhook.</p>
             <div class="contact-cards">
-              <a href="tel:+966500318730"><span>Phone / WhatsApp</span><strong>+966 50 031 8730</strong></a>
-              <a href="mailto:mahmod0102@gmail.com"><span>Email</span><strong>mahmod0102@gmail.com</strong></a>
-              <div><span>Location</span><strong>Riyadh, Saudi Arabia</strong></div>
+              <a href="tel:{{PHONE}}"><span>Phone / WhatsApp</span><strong>{{PHONE}}</strong></a>
+              <a href="mailto:{{EMAIL}}"><span>Email</span><strong>{{EMAIL}}</strong></a>
+              <div><span>Location</span><strong>{{LOCATION}}</strong></div>
             </div>
           </div>
           <form class="inquiry-form glass-form" id="inquiryForm" data-reveal>
@@ -257,11 +257,11 @@
               <label>Service needed<select name="service"><option>Construction</option><option>Contracting</option><option>Manpower Supply</option><option>MEP / Technical Support</option><option>Other</option></select></label>
               <label>Timeline<select name="timeline"><option>Urgent</option><option>This month</option><option>1-3 months</option><option>Planning stage</option></select></label>
             </div>
-            <label>Project or manpower requirement<textarea name="message" rows="5" required placeholder="Example: Need 25 electricians and 15 helpers for a Riyadh site, starting next month."></textarea></label>
+            <label>Project or manpower requirement<textarea name="message" rows="5" required placeholder="Example: Need 25 electricians and 15 helpers for a {{LOCATION}} site, starting next month."></textarea></label>
             <input type="hidden" name="source" value="home-contact-form" />
             <div class="form-footer">
               <button class="btn btn-primary magnetic" type="submit">Send inquiry</button>
-              <a class="btn btn-secondary" href="https://wa.me/966500318730" target="_blank" rel="noopener">WhatsApp instead</a>
+              <a class="btn btn-secondary" href="https://wa.me/{{PHONE}}" target="_blank" rel="noopener">WhatsApp instead</a>
             </div>
             <p class="form-status" data-form-status role="status" aria-live="polite"></p>
           </form>
@@ -272,7 +272,7 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <a class="brand footer-brand" href="/"><img src="assets/img/logo.svg" alt="" class="brand-logo" /><span><strong>RAKSA</strong><small>Construction | Contracting | Manpower</small></span></a>
+          <a class="brand footer-brand" href="/"><img src="assets/img/MainLogo.png" alt="" class="brand-logo" /><span><strong>RAKSA</strong><small>Construction | Contracting | Manpower</small></span></a>
           <p>Premium construction, contracting and manpower supply website with a working backend.</p>
         </div>
         <nav aria-label="Footer navigation">
@@ -282,9 +282,9 @@
           <a href="/sitemap.xml">Sitemap</a>
         </nav>
         <div>
-          <p><strong>Riyadh, Saudi Arabia</strong></p>
-          <p><a href="tel:+966500318730">+966 50 031 8730</a></p>
-          <p><a href="mailto:mahmod0102@gmail.com">mahmod0102@gmail.com</a></p>
+          <p><strong>{{LOCATION}}</strong></p>
+          <p><a href="tel:{{PHONE}}">{{PHONE}}</a></p>
+          <p><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
         </div>
       </div>
       <div class="container footer-bottom"><span>Copyright <span data-year></span> RAKSA. All rights reserved.</span><span>Ready-to-use full-stack website.</span></div>

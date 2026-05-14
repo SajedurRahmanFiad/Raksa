@@ -1,5 +1,7 @@
 'use strict';
 
+require('dotenv').config();
+
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
@@ -16,6 +18,9 @@ const HOST = process.env.HOST || '0.0.0.0';
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'RAKSA@2026';
 const WEBHOOK_URL = process.env.NOTIFICATION_WEBHOOK_URL || '';
 const NODE_ENV = process.env.NODE_ENV || 'development';
+const EMAIL = process.env.EMAIL || 'contact@example.com';
+const PHONE = process.env.PHONE || '+1234567890';
+const LOCATION = process.env.LOCATION || 'Your City, Country';
 const SESSION_MAX_AGE_MS = 1000 * 60 * 60 * 8;
 
 const sessions = new Map();
@@ -66,7 +71,7 @@ const defaultData = {
     {
       id: crypto.randomUUID(),
       title: 'Contracting support package',
-      location: 'Riyadh, Saudi Arabia',
+      location: LOCATION,
       category: 'Contracting',
       year: '2026',
       featured: true,
@@ -324,7 +329,21 @@ function streamFile(res, filePath, status) {
   } else {
     res.setHeader('Cache-Control', 'public, max-age=604800, immutable');
   }
-  fs.createReadStream(filePath).pipe(res);
+
+  if (ext === '.html') {
+    fs.readFile(filePath, 'utf8', (error, content) => {
+      if (error) {
+        return notFound(res);
+      }
+      content = content
+        .replace(/\{\{EMAIL\}\}/g, EMAIL)
+        .replace(/\{\{PHONE\}\}/g, PHONE)
+        .replace(/\{\{LOCATION\}\}/g, LOCATION);
+      res.end(content);
+    });
+  } else {
+    fs.createReadStream(filePath).pipe(res);
+  }
 }
 
 function csvEscape(value) {

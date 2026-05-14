@@ -6,7 +6,7 @@
     <title>Admin | RAKSA Website Backend</title>
     <meta name="robots" content="noindex,nofollow" />
     <meta name="theme-color" content="#050505" />
-    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="icon" type="image/png" href="assets/img/Avatar.png" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body data-page="admin" class="admin-body">
@@ -16,7 +16,7 @@
 
     <main class="admin-shell">
       <section class="admin-login glass-form" data-admin-login>
-        <a class="brand admin-brand" href="/"><img src="assets/img/logo.svg" alt="" class="brand-logo" /><span><strong>RAKSA</strong><small>Website Admin</small></span></a>
+        <a class="brand admin-brand" href="/"><img src="assets/img/MainLogo.png" alt="" class="brand-logo" /><span><strong>RAKSA</strong><small>Website Admin</small></span></a>
         <h1>Admin login</h1>
         <p>Default password is <strong>RAKSA@2026</strong>. Change it with the ADMIN_PASSWORD environment variable before going live.</p>
         <form id="loginForm">
@@ -28,7 +28,7 @@
 
       <section class="admin-dashboard" data-admin-dashboard hidden>
         <div class="admin-topbar">
-          <a class="brand" href="/"><img src="assets/img/logo.svg" alt="" class="brand-logo" /><span><strong>RAKSA</strong><small>Backend dashboard</small></span></a>
+          <a class="brand" href="/"><img src="assets/img/MainLogo.png" alt="" class="brand-logo" /><span><strong>RAKSA</strong><small>Backend dashboard</small></span></a>
           <div class="admin-actions"><a class="btn btn-secondary" href="/" target="_blank">View site</a><button class="btn btn-primary" type="button" data-logout>Logout</button></div>
         </div>
 
@@ -66,7 +66,7 @@
 
         <section class="admin-panel" data-tab-panel="settings">
           <div class="settings-grid">
-            <article><h3>Contact details</h3><p>Phone / WhatsApp: +966 50 031 8730<br />Email: mahmod0102@gmail.com<br />Location: Riyadh, Saudi Arabia</p></article>
+            <article><h3>Contact details</h3><p>Phone / WhatsApp: {{PHONE}}<br />Email: {{EMAIL}}<br />Location: {{LOCATION}}</p></article>
             <article><h3>Backend status</h3><p>This package runs with Node.js only. No database server is needed. Inquiries and projects are stored in <code>data/raksa-db.json</code>.</p></article>
             <article><h3>Before going live</h3><p>Set <code>ADMIN_PASSWORD</code> to a strong password, keep the <code>data</code> folder backed up and point your domain to the hosting server.</p></article>
             <article><h3>Optional notifications</h3><p>Set <code>NOTIFICATION_WEBHOOK_URL</code> to send every new inquiry to Make, Zapier, n8n, Slack or another automation service.</p></article>

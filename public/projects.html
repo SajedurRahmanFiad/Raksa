@@ -6,7 +6,7 @@
     <title>Projects | RAKSA</title>
     <meta name="description" content="RAKSA project gallery for construction, contracting and manpower supply. Ready to update with real project photos." />
     <meta name="theme-color" content="#050505" />
-    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="icon" type="image/png" href="assets/img/Avatar.png" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body data-page="projects">
@@ -20,9 +20,9 @@
 
     <header class="site-header" data-header>
       <div class="container nav-shell">
-        <a class="brand" href="/" aria-label="RAKSA home"><img src="assets/img/logo.svg" alt="" class="brand-logo" /><span><strong>RAKSA</strong><small>Construction | Contracting | Manpower</small></span></a>
+        <a class="brand" href="/" aria-label="RAKSA home"><img src="assets/img/MainLogo.png" alt="RAKSA logo" class="brand-logo" /><span><strong>RAKSA</strong><small>Construction | Contracting | Manpower</small></span></a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><em>Menu</em></button>
-        <nav class="site-nav" id="site-nav" data-nav><a href="/">Home</a><a href="/profile">Profile</a><a href="/projects">Projects</a><a href="/#contact">Contact</a><a class="nav-cta" href="https://wa.me/966500318730" target="_blank" rel="noopener">WhatsApp</a></nav>
+        <nav class="site-nav" id="site-nav" data-nav><a href="/">Home</a><a href="/about.html">About</a><a href="/profile">Profile</a><a href="/portfolio.html">Portfolio</a><a href="/projects">Projects</a><a href="/#services">Services</a><a href="/#process">Process</a><a href="/#contact">Contact</a><a class="nav-cta" href="https://wa.me/{{PHONE}}" target="_blank" rel="noopener">WhatsApp</a></nav>
       </div>
     </header>
 
@@ -48,17 +48,17 @@
 
       <section class="section contact-section compact-contact">
         <div class="container profile-cta" data-reveal>
-          <div><p class="eyebrow">Ready for real photos?</p><h2>Send the project photos later and the gallery can be upgraded.</h2><p>Phone / WhatsApp: +966 50 031 8730<br />Email: mahmod0102@gmail.com</p></div>
-          <a class="btn btn-primary magnetic" href="https://wa.me/966500318730" target="_blank" rel="noopener">Open WhatsApp</a>
+          <div><p class="eyebrow">Ready for real photos?</p><h2>Send the project photos later and the gallery can be upgraded.</h2><p>Phone / WhatsApp: {{PHONE}}<br />Email: {{EMAIL}}</p></div>
+          <a class="btn btn-primary magnetic" href="https://wa.me/{{PHONE}}" target="_blank" rel="noopener">Open WhatsApp</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-grid">
-        <div><a class="brand footer-brand" href="/"><img src="assets/img/logo.svg" alt="" class="brand-logo" /><span><strong>RAKSA</strong><small>Construction | Contracting | Manpower</small></span></a><p>Premium construction, contracting and manpower supply website with a working backend.</p></div>
+        <div><a class="brand footer-brand" href="/"><img src="assets/img/MainLogo.png" alt="" class="brand-logo" /><span><strong>RAKSA</strong><small>Construction | Contracting | Manpower</small></span></a><p>Premium construction, contracting and manpower supply website with a working backend.</p></div>
         <nav aria-label="Footer navigation"><a href="/">Home</a><a href="/profile">Company Profile</a><a href="/admin">Admin</a><a href="/#contact">Contact</a></nav>
-        <div><p><strong>Riyadh, Saudi Arabia</strong></p><p><a href="tel:+966500318730">+966 50 031 8730</a></p><p><a href="mailto:mahmod0102@gmail.com">mahmod0102@gmail.com</a></p></div>
+        <div><p><strong>{{LOCATION}}</strong></p><p><a href="tel:{{PHONE}}">{{PHONE}}</a></p><p><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p></div>
       </div>
       <div class="container footer-bottom"><span>Copyright <span data-year></span> RAKSA. All rights reserved.</span><span>Project gallery page.</span></div>
     </footer>
