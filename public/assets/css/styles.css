@@ -81,6 +81,15 @@ body.has-pointer .cursor-glow { opacity: 1; }
 .site-nav a { color: rgba(255,255,255,.78); padding: 12px 15px; border-radius: 999px; font-size: .92rem; transition: .25s ease; }
 .site-nav a:hover { color: var(--white); background: rgba(255,255,255,.09); }
 .site-nav .nav-cta { color: var(--black); background: var(--white); font-weight: 800; }
+
+/* Active page styling: premium gold background with subtle border */
+.site-nav a.is-active {
+  color: var(--black);
+  background: linear-gradient(135deg, var(--gold), var(--red-deep));
+  border: 1px solid rgba(227,170,52,0.95);
+  box-shadow: 0 8px 30px rgba(227,170,52,0.12);
+  font-weight: 900;
+}
 .nav-toggle { display: none; border: 0; background: transparent; color: var(--white); align-items: center; gap: 8px; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 4px; transition: .25s ease; }
 .nav-toggle em { font-style: normal; color: rgba(255,255,255,.72); font-size: .8rem; }
