@@ -294,7 +294,6 @@ function serveStatic(req, res, pathname) {
     '/': 'index.html',
     '/home': 'index.html',
     '/profile': 'profile.html',
-    '/projects': 'projects.html',
     '/admin': 'admin.html'
   };
 

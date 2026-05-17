@@ -214,10 +214,18 @@ input:focus, textarea:focus, select:focus { border-color: rgba(255,255,255,.46);
 .toast.show { opacity: 1; transform: translateY(0); }
 
 .page-hero { padding-top: 180px; min-height: 72vh; display: flex; align-items: center; }
-.profile-panel { border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 34px; background: linear-gradient(135deg, rgba(255,255,255,.12), rgba(255,255,255,.045)); box-shadow: var(--shadow); }
+.profile-panel { border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 34px; background: linear-gradient(135deg, rgba(255,255,255,.12), rgba(255,255,255,.045)); box-shadow: var(--shadow); position: relative; overflow: hidden; }
 .profile-panel span { color: var(--green-soft); text-transform: uppercase; letter-spacing: .18em; font-size: .75rem; font-weight: 900; }
 .profile-panel strong { display: block; font-size: clamp(2rem, 4vw, 3.4rem); line-height: .95; letter-spacing: -.06em; margin: 20px 0; }
-.profile-panel p { color: rgba(255,255,255,.62); }
+.profile-panel p { color: rgba(255,255,255,.72); }
+.profile-panel::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at top left, rgba(227,170,52,.07), transparent 36%), radial-gradient(circle at bottom right, rgba(255,255,255,.05), transparent 28%); pointer-events: none; }
+.profile-signature { margin-top: 34px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,.1); }
+.profile-signature strong { font-size: 1.1rem; color: #ffffff; letter-spacing: -.02em; }
+.profile-signature span { display: block; color: rgba(255,255,255,.68); margin-top: 8px; text-transform: uppercase; letter-spacing: .16em; font-size: .82rem; }
+#about-ceo .split-grid.reverse { align-items: center; gap: 46px; }
+#about-ceo .section-heading { padding-right: 36px; border-right: 1px solid rgba(255,255,255,.12); }
+#about-ceo .section-heading h2 { max-width: 460px; }
+#about-ceo .section-heading p { color: rgba(255,255,255,.68); }
 .two-column-content { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
 .profile-values { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .profile-values span { display: block; color: var(--green-soft); text-transform: uppercase; letter-spacing: .18em; font-size: .72rem; font-weight: 900; margin-bottom: 18px; }
@@ -228,14 +236,21 @@ input:focus, textarea:focus, select:focus { border-color: rgba(255,255,255,.46);
 .list-columns article { padding: 24px; border-radius: 24px; border: 1px solid var(--line); background: rgba(255,255,255,.06); }
 .list-columns ul { padding-left: 18px; color: rgba(255,255,255,.65); }
 .list-columns li { margin: 8px 0; }
-.client-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-.client-grid article { background: var(--white); border: 1px solid rgba(0,0,0,.08); border-radius: 20px; padding: 20px; }
+.client-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.client-grid article,
+.project-grid article {
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 20px;
+  padding: 20px;
+}
 .client-grid strong { display: block; margin-bottom: 7px; }
 .client-grid span { color: rgba(0,0,0,.58); }
 .compact-contact { padding: 70px 0; }
-.profile-cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 34px; background: rgba(255,255,255,.07); }
-.profile-cta h2 { font-size: clamp(2rem, 4vw, 4.2rem); }
-.profile-cta p { color: rgba(255,255,255,.68); }
+.profile-cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 34px; background: rgba(255,255,255,.07); color: var(--white); }
+.profile-cta h2 { font-size: clamp(2rem, 4vw, 4.2rem); color: var(--white); }
+.profile-cta p { color: rgba(255,255,255,.78); }
 
 .site-footer { background: #030303; border-top: 1px solid var(--line); padding: 60px 0 30px; position: relative; z-index: 1; }
 .footer-grid { display: grid; grid-template-columns: 1.1fr .7fr .7fr; gap: 32px; align-items: start; }
